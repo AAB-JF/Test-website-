@@ -1,49 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitor Test Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .counter-box {
-            font-size: 48px;
-            font-weight: bold;
-            color: #27ae60;
-            margin: 20px 0;
-        }
-        button {
-            padding: 12px 24px;
-            font-size: 16px;
-            border: none;
-            background-color: #3498db;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <title>Test Page</title>
 </head>
-<body>
+<body style="text-align: center; padding: 50px; font-family: Arial;">
+    <h1>Welcome Visitor! 👋</h1>
+    <p>Click the button to test counting:</p>
+    
+    <h2 id="num" style="color: green; font-size: 40px;">0</h2>
+    
+    <button onclick="countUp()" style="padding: 10px 20px; font-size: 16px;">Count 1 to 10</button>
 
-    <div class="container
-      
+    <script>
+        let x = 0;
+        function countUp() {
+            if (x < 10) {
+                x++;
+                document.getElementById('num').innerText = x;
+            } else {
+                alert('Test Complete! Interactivity works!');
+            }
+        }
+    </script>
+</body>
+</html>
