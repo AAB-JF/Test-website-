@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Test Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .counter-box {
+            font-size: 48px;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 20px 0;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>My Test Website 🚀</h1>
-    <p>Built and tested directly from my Android phone using Acode.</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>I'm learning how web development works from the ground up.</p>
-  </section>
-
-  <!-- NEW: Interactive Test Section -->
-  <section style="background: #eef2f7; padding: 20px; border-radius: 8px; text-align: center;">
-    <h2>JavaScript Test Panel</h2>
-    <p>Test if your website can handle interactive actions:</p>
-    
-    <button onclick="runTest()" style="background: #0066cc; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">
-      Click to Test
-    </button>
-    
-    <p id="output-text" style="margin-top: 15px; font-weight: bold; color: #333;"></p>
-  </section>
-
-  <footer>
-    <p>Next stop: Publishing live to GitHub Pages!</p>
-  </footer>
-
-  <!-- JavaScript makes the button work -->
-  <script>
-    function runTest() {
-      const messages = [
-        "🎉 Success! JavaScript is running perfectly!",
-        "⚡ Awesome! Your mobile development environment works!",
-        "🚀 You just wrote your first dynamic web function!"
-      ];
-      // Pick a random message each time the button is clicked
-      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
-      document.getElementById("output-text").innerText = randomMsg;
-    }
-  </script>
-
-</body>
-</html>
+    <div class="container
+      
